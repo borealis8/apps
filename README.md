@@ -2,6 +2,14 @@
 
 [Download the app ZIP](https://github.com/borealis8/apps/raw/refs/heads/study-studio-download/Study-Studio-Launch.zip)
 
-Save the ZIP to your laptop and extract it. Install Node.js LTS from https://nodejs.org/ if needed. On Windows run START-STUDY-STUDIO.cmd; on Mac run START-STUDY-STUDIO.command. The launcher opens the app in a browser; keep its terminal window open while studying. See OPEN-FIRST.txt in the package.
+## Start on Windows
 
-The package contains the tested Study Studio v0.5 app, a local server, launchers and instructions. No npm installation or API key is required for study tools. AI tutor chat requires your own provider key on the backend. Keep your old files and backups; moving to a different browser address requires restoring your study-set and practice backups separately.
+1. Save the ZIP to Downloads.
+2. **Right-click the ZIP → Extract All → Extract.** Open the new extracted folder.
+3. Run **START-STUDY-STUDIO.cmd** from that folder.
+
+The **server** and **standalone** folders must be next to the launcher. Opening the launcher inside the ZIP copies only that file to a temporary folder, which cannot start the app. The updated launcher explains this before starting Node.
+
+On Mac, double-click the ZIP in Finder, then run **START-STUDY-STUDIO.command** from the new extracted folder.
+
+Install Node.js LTS from https://nodejs.org/ if needed. Keep the launcher terminal open while studying. See OPEN-FIRST.txt for details. No npm install or API key is required for study tools; AI chat requires a provider key on the backend. Keep old files and backups until your work has been transferred using both study-set and practice backup/restore flows.
