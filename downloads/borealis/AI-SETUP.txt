@@ -1,0 +1,47 @@
+BOREALIS ASSISTANT — LIVE AI AND TEXTBOOK REFERENCES
+
+The single-file OPEN-BOREALIS.html uses local rules and reference search.
+For genuine conversational AI and PDF import, run the launcher version:
+
+1. Install Node.js LTS if it is not installed.
+2. Extract the entire ZIP into a new folder.
+3. Copy .env.example to .env in that folder. On Windows, enable file-name
+   extensions so the filename is .env, not .env.txt.
+4. Edit .env with a plain-text editor. Set BOREALIS_AI_KEY to your own
+   provider API key. Never share this file or enter your key into chat.
+   The default model is gpt-4.1-mini and the endpoint is OpenAI-compatible.
+5. Run START-BOREALIS.cmd on Windows, or run the .command file with bash
+   on macOS/Linux. First launch installs the PDF reader from the lockfile.
+6. Open the browser address printed by the launcher. Keep the terminal open.
+   If you previously selected Local mode, open the avatar's workspace settings
+   and select AI provider. Otherwise, configured AI becomes the default.
+
+An API subscription/key and provider billing are separate from a ChatGPT
+subscription. Provider calls can incur charges. No key or paid usage is
+included. Restart the launcher after changing .env.
+
+TEXTBOOKS / DATASHEETS
+
+Click References below the assistant conversation. Upload a text-based PDF,
+TXT or Markdown file, or paste a passage. Give it a clear title, edition and
+chapter. Ask a specific electronics question. In AI mode, the app sends the
+question, recent conversation, schematic and selected relevant excerpts to
+your configured provider. Citation cards show the passages supplied for
+that response and PDF page numbers where available.
+
+This is reference retrieval, not model training. Documents are stored in
+this browser; they are not bundled into your shared project JSON. Relevant
+excerpts are sent to your provider only when you use AI mode. Remove a source
+from References when you no longer want it used. Use material you are entitled
+to upload and share with the chosen provider.
+
+Prefer relevant chapters and current component datasheets. Limits: 12 sources,
+1.2 million characters total; PDFs up to 15 MB and 500 pages each. Scanned PDFs
+need OCR first. Text extraction can lose formulae, symbols, tables and diagrams.
+Verify important formulae and ratings in the original. Keyword retrieval can
+miss relevant passages, and a language model can still make mistakes. Neither
+an AI answer nor a citation is a substitute for simulation or engineering review.
+
+Conversations persist per project in this browser. Only the latest 12 bounded
+messages are sent as conversation context. New chat clears the current
+conversation. It does not remove your reference library.
